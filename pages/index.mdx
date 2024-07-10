@@ -1,11 +1,17 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+# Как это работает
 
-## What is Nextra?
+Слой — платформа для агрегирования, визуализации и изучения геоданных.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+Поверх карты накладываются слои данных.
 
-## Documentation
+## Работа с картой
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+Карта состоит из множество маленьких картинок. Они загружаются под каждый зум и называются тайлами (от англ. плитка). Тайлы могут быть как растровыми картинками, так и векторными.
+
+Источник тайлов это просто ссылка. Например, на openstreetmap, mapbox, yandex maps, картинки, pmtiles, pbf tiles, mvt tiles.
+
+## Работа с данными
+
+Поверх базовой карты можно накладывать собственные данные в различных форматах , например, в geojson, mvt\pbf или картинках. Ваши данные также могут храниться в postgis базе данных.
+
+Стиль данных и карты с векторными тайлами гибко настраивается. Их можно настроить вручную, взять готовые или перенести из QGIS.

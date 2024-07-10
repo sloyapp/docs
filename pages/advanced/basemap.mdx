@@ -1,0 +1,26 @@
+# Оформление базовой карты
+
+Базовая карта состоит из тайлов. Тайлы могут быть как векторными, так и растровыми.
+
+[Пример описания векторной карты можно](https://github.com/sloyio/sloy-template/blob/main/public/gorodets-style.json)
+
+Для того чтобы добавить openstreetmap или аналог на карту, достаточно добавить в [настройки стилей](https://github.com/sloyio/sloy-template/blob/main/public/gorodets-style.json)
+
+```json
+{
+  "sources": {
+    "osm": {
+      "type": "raster",
+      "tiles": ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+      "tileSize": 256
+    }
+  },
+  "layers": [
+    {
+      "id": "simple-tiles",
+      "type": "raster",
+      "source": "osm"
+    }
+  ]
+}
+```
