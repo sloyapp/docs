@@ -20,6 +20,9 @@ const config: DocsThemeConfig = {
     title: "Содержание",
   },
   darkMode: false,
+  themeSwitch: {
+    component: null,
+  },
 };
 
 export default config;
