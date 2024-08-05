@@ -1,5 +1,10 @@
 {
-  "overview": "Начало работы",
-  "configuration": "Конфигурация",
+  "overview": "Введение",
+  "sources": "Источники данных",
+  "layers": "Слои",
+  "visualizations": "Визуализация на карте",
+  "cards": "Карточки",
+  "filters": "Фильтры",
+  "copyrights": "Копирайты",
   "basemap": "Базовая карта"
 }
