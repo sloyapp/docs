@@ -1,0 +1,104 @@
+# Слои
+
+## Точки
+
+```json
+{
+  "sources": [
+    {
+      "id": "source-id",
+      "path": "/points.geojson",
+      "type": "geojson"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer-id",
+      "title": "Коммерция",
+      "visualizations": [
+        {
+          "id": "vis-id",
+          "mapLayerProps": {
+            "type": "circle",
+            "paint": {
+              "circle-color": "#93fa16",
+              "circle-stroke-width": 1,
+              "circle-radius": 5
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+![vis-points](/vis-points.png)
+
+## Полигоны
+
+```json
+{
+  "sources": [
+    {
+      "id": "source-id",
+      "path": "/buildings.geojson",
+      "type": "geojson"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer-id",
+      "title": "Здания",
+      "visualizations": [
+        {
+          "id": "vis-id",
+          "mapLayerProps": {
+            "type": "fill",
+            "paint": {
+              "fill-color": "#ff0062"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+![vis-fill](/vis-fill.png)
+
+## Линии
+
+```json
+{
+  "sources": [
+    {
+      "id": "source-id",
+      "path": "lines.geojson",
+      "type": "geojson"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer-id",
+      "title": "Туристические маршруты",
+      "visualizations": [
+        {
+          "id": "vid-id",
+          "source": "source-id",
+          "type": "map",
+          "mapLayerProps": {
+            "type": "line",
+            "paint": {
+              "line-width": 2
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+![vis-lines](/vis-lines.png)
