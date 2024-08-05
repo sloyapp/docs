@@ -1,16 +1,17 @@
-# Слои
+# Cписок визуализаций (visualizations)
 
-## Точки
+Визуализация это отображение данных на карте.
+
+Сейчас доступны: Точки, Полигоны, Линии и Тепловая карта.
+
+## Примеры:
+
+### Точки
+
+![vis-points](/vis-points.png)
 
 ```json
 {
-  "sources": [
-    {
-      "id": "source-id",
-      "path": "/points.geojson",
-      "type": "geojson"
-    }
-  ],
   "layers": [
     {
       "id": "layer-id",
@@ -33,19 +34,12 @@
 }
 ```
 
-![vis-points](/vis-points.png)
+### Полигоны
 
-## Полигоны
+![vis-fill](/vis-fill.png)
 
 ```json
 {
-  "sources": [
-    {
-      "id": "source-id",
-      "path": "/buildings.geojson",
-      "type": "geojson"
-    }
-  ],
   "layers": [
     {
       "id": "layer-id",
@@ -66,19 +60,12 @@
 }
 ```
 
-![vis-fill](/vis-fill.png)
+### Линии
 
-## Линии
+![vis-lines](/vis-lines.png)
 
 ```json
 {
-  "sources": [
-    {
-      "id": "source-id",
-      "path": "lines.geojson",
-      "type": "geojson"
-    }
-  ],
   "layers": [
     {
       "id": "layer-id",
@@ -101,4 +88,6 @@
 }
 ```
 
-![vis-lines](/vis-lines.png)
+### Подробное API:
+
+![visualisation illustration](/visualisation.svg)
