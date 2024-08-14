@@ -6,5 +6,6 @@ const withNextra = require("nextra")({
 const config = withNextra();
 
 module.exports = {
+  output: "export",
   ...config,
 };
