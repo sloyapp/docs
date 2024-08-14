@@ -7,5 +7,8 @@ const config = withNextra();
 
 module.exports = {
   output: "export",
+  images: {
+    unoptimized: true,
+  },
   ...config,
 };
